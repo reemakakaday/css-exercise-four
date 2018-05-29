@@ -1,4 +1,86 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 body {
-  background-color: #dadada;
+  background-color: #ffffff;
   font-size: 10px;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+.headline {
+  padding: 10%
+  font-size: 1em
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+  background color: #dadada;
+}
+.baku {
+  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/baku.jpg);
+}
+
+.london{
+  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/london.png);
+}
+
+.madrid {
+  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/rome.jpg);
+}
+
+.preview {
+  background-repeat:no-repeat;
+  background-size: contain;
+  padding-top: 10%;
+  padding-bottom: 40%;
+  padding-left: 10%;
+  height:15em;
+  margin-bottom: 6%;
+}
+
+@media screen and (min-width: 575px){
+.container {
+  background-color: #dadada
+  width: 75%
+  margin: 0 auto;
+  padding-bottom: 75%
+}
+.preview {
+  margin: 1%;
+  width: 23%;
+  float: left;
+  background-size: cover;
+  padding-bottom: 0;
+
+}
+
+}
+div {
+  background-color: #dadada;
+  float: left;
+  margin: 1% 0;
+  width: 100%;
+  padding: 20px 25px;
+}
+
+h1, h3 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: 300;
 }
