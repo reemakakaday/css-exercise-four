@@ -7,13 +7,13 @@ body {
 }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 6em;
   font-family: sans-serif;
 }
 
 .headline {
-  padding: 10%
-  font-size: 1em
+  padding: 10%;
+  font-size: 1em;
   font-family: sans-serif;
   font-weight: lighter;
   text-align: center;
@@ -23,66 +23,68 @@ h1 {
 
 .container {
   margin: 0 auto;
-  width: 50%;
-  background color: #dadada;
+  width: 100%;
 }
 .baku {
-  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/baku.jpg);
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  background-position: right;
 }
 
 .london{
-  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/london.png);
+  background-image: url(../images/london.png);
+  background-size: cover;
+  background-position: right;
 }
 
 .madrid {
-  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/madrid.jpg);
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  background-position: right;
 }
 
 .rome {
-  background-image: url(/Users/reemakakaday/Documents/GitHub/css-exercise-four/images/rome.jpg);
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  background-position: right;
 }
 
 .preview {
-  background-repeat:no-repeat;
-  background-size: contain;
   padding-top: 10%;
   padding-bottom: 40%;
   padding-left: 10%;
-  height:15em;
-  margin-bottom: 6%;
+  height:300px;
 }
 
-@media screen and (min-width: 575px){
-.container {
-  background-color: #dadada
-  width: 75%
-  margin: 0 auto;
-  padding-bottom: 75%
-}
-.preview {
-  margin: 1%;
-  width: 23%;
-  float: left;
-  background-size: cover;
-  padding-bottom: 0;
-
-}
-
-}
-div {
-  background-color: #dadada;
-  float: center;
-  margin: 1% 0;
-  width: 100%;
-  padding: 20px 25px;
-}
-
-h1, h3 {
-  font-size: 2.5em;
+h1, h2 {
+  font-size: 3em;
   margin: 0;
 }
 
-h3 {
+h2 {
   font-size: 1.8em;
   font-weight: 300;
+}
+
+@media (min-width: 600px){
+.container {
+  width: 75%
+}
+.preview {
+  float: right;
+  margin: 1%;
+  width: 48%;
+}
+}
+
+@media (min-width: 900px){
+.container {
+  width: 80%
+}
+.preview {
+  background-size: cover;
+  height: 200px;
+  margin: 2em 1%;
+  width: 23%;
+}
 }
